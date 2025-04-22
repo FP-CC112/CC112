@@ -29,6 +29,8 @@ int particion(int arr[], int inicio, int fin){
     return i-1;
 }
 
+
+
 void imprimirArreglo(int a[], int n){
     for(int i = 0; i < n; i++){
         cout << a[i] << " ";
