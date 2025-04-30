@@ -22,6 +22,6 @@ int main(){
     cout << arr <<endl; // imprime la dirección de arr[0]
     cout << &arr <<endl; // imprime dirección de  a​rr
    
-    
+}   
 
    

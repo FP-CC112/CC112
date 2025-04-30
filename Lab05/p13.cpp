@@ -7,9 +7,10 @@ cuántas veces aparece un carácter específico.
  #include <iostream>
  using namespace std;
 
- int contarCaracter(char cadena[], char caracter){
-    int cont=0;
-    const char *ptr=cadena;
+ int contarCaracter(char *cadena, char caracter){
+   int cont=0;
+   char *ptr=cadena;
+   
 
     while(*ptr!='\0'){
        if(*ptr == caracter){
@@ -17,13 +18,14 @@ cuántas veces aparece un carácter específico.
        }
        ptr++;
     }
+    cout << cadena <<endl;
 
     return cont;
  }
  
  int main(){
-    char texto[]="programacion";
-    char letra='o';
+    char texto[] = "programacion";
+    char letra='a';
 
     int resultado= contarCaracter(texto, letra);
     cout << "El caracter aparece " << resultado << " veces." << endl;
