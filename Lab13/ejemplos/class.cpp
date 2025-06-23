@@ -6,12 +6,12 @@ using namespace std;
 
 
 class Circle {
-    double radius; // debe inicializarse ?!
+    const double radius; // debe inicializarse ?!
     int &ref;      // debe inicializarse ?!
 
 public:
     // Constructor que usa lista de inicialización
-    Circle(int &r) : radius(5.3), ref(r) {
+    Circle(int &r) : radius(5.3), ref(r) {     
         cout << "Constructor ejecutado" << endl;
     }
     Circle(double s, int &r) : radius(s), ref(r) {

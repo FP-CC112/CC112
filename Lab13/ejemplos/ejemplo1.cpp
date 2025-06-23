@@ -50,7 +50,7 @@ int main ( ) {
 // Creando el primer círculo y aplicando funciones miembro
     cout << "Circulo 1: " << endl;
     Circle circle1;
-    //circle1.setRadius (10.0); //si no reinicializamos constructores?
+    circle1.setRadius (10.0); //si no reinicializamos constructores?
     cout << "Radio: " << circle1.getRadius() << endl;
     cout << "Area: " << circle1.getArea() << endl;
     cout << "Perimetro: " << circle1.getPerimeter() << endl << endl;

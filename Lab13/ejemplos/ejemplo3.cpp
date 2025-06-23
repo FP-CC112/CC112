@@ -37,7 +37,7 @@ RandomInteger :: RandomInteger (int lw, int hh) :low (lw), high (hh) {
 }
 // Destructor
 RandomInteger :: ~RandomInteger () {
-    cout << "Destruyendo obejetos" << endl;
+    cout << "Destruyendo objetos" << endl;
 }
 // funciónmiembro accesor
 void RandomInteger :: print () const {
