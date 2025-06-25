@@ -1,28 +1,36 @@
 #include "Complejo.h"
-#include <iostream>
-using namespace std;
 
 
 Complejo::Complejo(double re, double im): real(re), imag(im) {}
 
 
-Complejo Complejo::sumar(const Complejo& otro) const {
+//Ejercicio
+//double Complejo::modulo() const {}
+
+
+Complejo Complejo::operator+(const Complejo& otro) const {
     return Complejo(real + otro.real, imag + otro.imag);
 }
 
 //Ejercicio
-//Complejo Complejo::restar(const Complejo& otro) const{}
+//Complejo Complejo::operator-(const Complejo& otro) const {}
 
-Complejo Complejo::multiplicar(const Complejo& otro) const {
-    return Complejo(real * otro.real - imag * otro.imag, real * otro.imag + imag * otro.real);
+Complejo Complejo::operator*(const Complejo& otro) const {
+    double r = real * otro.real - imag * otro.imag;
+    double i = real * otro.imag + imag * otro.real;
+    return Complejo(r, i);
 }
 
 //Ejercicio
-//Complejo Complejo::dividir(const Complejo& otro) const {}
+//Complejo Complejo::operator/(const Complejo& otro) const {}
 
-void Complejo::mostrar() const {
-    cout << real << " + " << imag << "i" << endl; 
+
+
+std::ostream& operator<<(std::ostream& os, const Complejo& c) {
+    os << c.real << " + " << c.imag << "i";
+    return os;
 }
+
 
 
 
