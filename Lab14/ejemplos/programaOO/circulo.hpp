@@ -1,4 +1,5 @@
 ﻿// Archivo interfaz
+//#pragma once
 #ifndef CIRCLE_H // evita la duplicación de este archivo
 #define CIRCLE_H
 #include <iostream>
@@ -19,4 +20,5 @@ public:
     double getArea () const;
     double getPerimeter () const; 
 };
+
 #endif

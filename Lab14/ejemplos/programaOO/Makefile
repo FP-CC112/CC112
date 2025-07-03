@@ -7,7 +7,7 @@
 CXX = c++
 
 # Flags de compilación
-CXXLAGS  = -Wall -std=c++17
+CXXFLAGS  = -Wall -std=c++17
 
 # Archivos fuente y objetos
 SRC = circulo.cpp aplicacion.cpp
