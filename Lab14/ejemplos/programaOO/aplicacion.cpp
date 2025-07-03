@@ -29,3 +29,9 @@ return 0;
 // c++ -c aplicacion.cpp              // compilación del archivo aplicación  
 // c++ -o main circulo.o aplicacion.o // enlace de los 2 archivos objetos compilados
 // ./main                             // ejecución del archivo ejecutable
+
+
+
+// de forma abreviada
+// c++ -o main circulo.cpp aplicacion.cpp  // Compilacion y enlace
+// ./main                                  // ejecucion
