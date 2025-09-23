@@ -7,27 +7,25 @@ cuántas veces aparece un carácter específico.
  #include <iostream>
  using namespace std;
 
- int contarCaracter(char *cadena, char caracter){
-   int cont=0;
-   char *ptr=cadena;
-   
-
-    while(*ptr!='\0'){
-       if(*ptr == caracter){
-          cont++;
-       }
-       ptr++;
+// Cuenta cuántas veces aparece un carácter 'c' en la cadena 'str' usando punteros
+int contarCaracter(const char* str, char c) {
+    int contador = 0;
+    while (*str != '\0') {        // Mientras no sea el fin de cadena
+        if (*str == c) {
+            contador++;
+        }
+        str++;                   // Avanzar al siguiente carácter
     }
-    cout << cadena <<endl;
+    return contador;
+}
 
-    return cont;
- }
- 
- int main(){
-    char texto[] = "programacion";
-    char letra='a';
+int main() {
+    const char texto[] = "hola mundo, hola punteros";
+    char caracterBuscado = 'o';
 
-    int resultado= contarCaracter(texto, letra);
-    cout << "El caracter aparece " << resultado << " veces." << endl;
-    return 0; 
- }
+    int cantidad = contarCaracter(texto, caracterBuscado);
+
+    cout << "El caracter '" << caracterBuscado << "' aparece " << cantidad << " veces en la cadena." << endl;
+
+    return 0;
+}
